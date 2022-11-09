@@ -1,0 +1,47 @@
+//defina uma estrutura e um tipo de dado para armazenar informações de bandas: nome, estilo, qntd. itegrante, ranking. O tipo de dado deve se chamar bandas
+
+//criar uma constante TAM com valor 3
+#include <stdio.h>
+#define TAM 3 
+#include <string.h>
+
+//criar o tipo de dado BANDA
+typedef struct banda {
+    
+    char nome[50];
+    char estilo[50];
+    int tamanho;
+    int rank;
+    
+} BANDA;
+
+// Criar uma função leBanda que recebe o nome do vetor imprime as bandas
+void leBanda (BANDA *v){
+    
+for (int i=0;i<TAM; i++){
+    
+   printf("\nInsira o nome da banda: ");                            scanf("%s", v[i].nome);
+   printf("Insira o estilo musical da banda: ");                    scanf("%s", v[i].estilo);
+   printf("Insira a quantidade de integrantes da banda: ");         scanf("%d", &v[i].tamanho);
+   printf("Insira a poiscao que a banda se encontra no rank: ");    scanf("%d", &v[i].rank);
+}
+}
+
+void exibeBanda (BANDA *exib) {
+    
+    for (int i=0;i<TAM; i++){
+        
+        printf("\n\nA banda se chama %s ", exib[i].nome);         
+        printf("\nO estilo musical da banda eh %s ", exib[i].estilo);       
+        printf("\nA banda tem %d integrantes ", exib[i].tamanho);  
+        printf("\nA banda se encontra na posicao %d do rank ", exib[i].rank);          
+    }
+}
+
+int main () {
+    BANDA v [TAM];   //VETOR do tipo banda.
+    leBanda (v);
+    printf("\n\n ------------------ LISTAGEM DE TODAS AS BANDAS ------------------");
+    exibeBanda (v);
+return 0;
+}

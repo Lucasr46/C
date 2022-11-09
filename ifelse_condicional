@@ -1,6 +1,6 @@
 /******************************************************************************
-Lucas Henrique 07/11/2022
-FUNÇÃO IMPRIMIR -> Nessa caso criamos uma função para chamar na main.
+Lucas Henrique 
+Nesse caso estamos trabalhando com condicionais. O programa solicita a quantidade de maçãs que o usuário comprou. Se o usuario comprou mais de 11 maçãs ele pagará $1, se não, pagará $1.3
 *******************************************************************************/
 
 #include <stdio.h>

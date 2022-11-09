@@ -1,6 +1,7 @@
-//******************************************************************************
-//Lucas Henrique Ramos | 10/08/2022
-//*******************************************************************************
+/******************************************************************************
+Lucas Henrique Ramos | 10/08/2022
+Nesse programa solicitamos ao usuario 3 valores, o programa devolverá para ele qual o maior valor inserido e em qual poisição ele se encontra
+*******************************************************************************/
 #include <stdio.h>
 
 int main()

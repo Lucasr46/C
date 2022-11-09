@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void soma10(int *x){
+
+*x = 10 + *x;
+
+return ;
+}
+
+int main(){
+    
+    int numero;
+    
+    printf("Insira o valor do numero: ");
+    scanf ("%d", &numero);
+    
+    soma10(&numero);
+    
+    printf("O novo valor é: %d", numero);
+    
+    return 0;
+}

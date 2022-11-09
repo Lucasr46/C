@@ -1,3 +1,8 @@
+/******************************************************************************
+Lucas Henrique Ramos
+Nesse programa criamos uma STRUCT bandas + funções que serão chamadas na main
+*******************************************************************************/
+
 //defina uma estrutura e um tipo de dado para armazenar informações de bandas: nome, estilo, qntd. itegrante, ranking. O tipo de dado deve se chamar bandas
 
 //criar uma constante TAM com valor 3

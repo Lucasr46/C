@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+    
+    int apple;
+    float valor;
+    
+    printf ("Quantas apples voce comprou? ");
+    scanf ("%d", &apple);
+    
+    
+    if (apple > 11)
+        
+    valor = apple*1.00;
+    
+    else 
+    valor = apple*1.30;
+    
+    printf("Voce comprou %d apples \n", apple);
+    printf ("Voce pagou %2.f reais", valor);
+    
+}

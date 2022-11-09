@@ -1,0 +1,35 @@
+//******************************************************************************
+//Lucas Henrique Ramos | 10/08/2022
+//*******************************************************************************
+#include <stdio.h>
+
+int main()
+{
+
+int N1, N2, N3, maior, pos;
+
+printf("Insira o valor de N1:");
+scanf("%d", &N1);
+
+maior = N1;
+pos = 1;
+
+printf("Insira o valor de N2:");
+scanf("%d", &N2);
+
+if ( N2 > maior){
+    maior = N2;
+    pos = 2;
+}
+
+printf("Insira o valor de N3:");
+scanf("%d", &N3);
+
+if ( N3 > maior){
+    maior = N3;
+    pos = 3;
+}
+  
+      printf("o maior valor eh %d e esta na posicao %d", maior, pos); 
+    return 0;
+}

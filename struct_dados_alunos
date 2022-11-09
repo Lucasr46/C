@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <string.h>
+
+#define TAM 45
+
+struct dados_aluno {
+    
+    int matricula;
+    char nome [TAM];
+    float n1;
+    float n2;
+};
+
+typedef struct dados_aluno dados_aluno;
+
+int main(){
+    
+    dados_aluno al1 = {0,"teste", 0, 0};
+    
+    printf("-------------- O teste foi realizado, vamos inserir um aluno real--------------\n");
+    printf("Qual o nome do aluno? \n");
+    scanf ("%s", al1.nome);
+    printf("Qual a matricula do aluno? \n");
+    scanf ("%d", &al1.matricula);
+    printf("Qual a N1 do aluno? \n");
+    scanf ("%f", &al1.n1);
+    printf("Qual a N2 do aluno? \n");
+    scanf ("%f", &al1.n2);
+    
+    printf("******* Dados do aluno %s ******* \n", al1.nome);
+    printf("matricula : %d\n", al1.matricula);
+    printf("nome : %s\n", al1.nome);
+    printf("n1 : %.2f\n", al1.n1);
+    printf("n2 : %.2f\n", al1.n2);
+    
+    float media = (al1.n1 + al1.n2) / 2;
+    printf ("media:  %f", media);
+    
+    
+    
+
+}

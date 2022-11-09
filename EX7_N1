@@ -1,0 +1,53 @@
+//QUESTÃO 7ATIVIDADE 7 DA N1  - LUCAS HENRIQUE RAMOS
+//Considere a realização de uma pesquisa de 1.000 pessoas para obtenção das seguintes informações:
+//o valor da maior altura,
+//o valor da menor altura,
+//a média das alturas,
+//quantas pessoas tem a altura inferior à média das alturas.
+//Considere ainda que um programador foi selecionado para desenvolver um modelo de código que
+//soluciona o problema automatizando a coleta das alturas e a geração de informações.
+//Com base nas informações apresentadas, desenvolva o código adequado para resolver o problema
+//usando pseudocódigo ou uma linguagem de programação.
+
+#define TAM 4
+#include <stdio.h>
+
+int main()
+{
+    float h[TAM];
+    int i;
+    float menorh=0, maiorh=0, mediah=0;
+    int hinfm;
+    
+    printf("Entre com as alturas para preencher o array: \n");
+    for (i = 0; i <TAM; i++){
+        scanf("%f", &h[i]);
+    }
+
+maiorh= h[0];
+menorh= h[0];
+
+for(int i=0; i< TAM; i++){
+    mediah=mediah + h[i];
+    if (menorh>h[i]){
+        menorh=h[i];
+    }
+    if (maiorh<h[i]){
+        maiorh=h[i];
+    }
+}
+mediah=mediah/TAM;
+printf("\n ***ALTURA MÉDIA: %f***", mediah);
+for(int i = 0; i <TAM; i++){
+    if(h[i]<mediah){
+        hinfm = hinfm + 1;
+    }
+}
+
+    printf("\n Menor altura: %f", menorh);
+    printf("\n Maior altura: %f", maiorh);
+    printf("\n Quantidade de pessoas com altura inferior a média: %d", hinfm);
+
+    return 0;
+
+}

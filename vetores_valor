@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (){
+    
+    int vet[5]; //declarando o vetor    
+    int i; //
+    
+    for(i=0; i<5; i++){
+        printf("Insira o valor do vetor de posicao %d: ", i);
+            scanf("%d", &vet[i]);
+    }
+    for(i=0; i<5; i++){
+        printf ("O valor do vetor %d eh %d \n", i, vet[i]);
+    } 
+}
